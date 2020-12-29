@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.spacePar{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.imgEmpAmiga{
+  width: 250px;
+  height: 180px;
+}

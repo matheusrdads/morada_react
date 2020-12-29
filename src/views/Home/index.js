@@ -1,0 +1,109 @@
+import React from 'react';
+import { Container, Button, Image } from 'react-bootstrap'
+import CeC from '../assets/CeC.JPG'
+import construction from '../assets/servicos/construction.png'
+import conserto from '../assets/servicos/conserto.png'
+import projeto1 from '../assets/projetos/projeto1.jpg'
+import projeto2 from '../assets/projetos/projeto2.jpg'
+import projeto3 from '../assets/projetos/projeto3.jpg'
+
+
+export default function Home() {
+    return (
+        <Container fluid>
+            {/* sessão sobre */}
+            <h2 className="display-2">Sobre</h2>
+            <p className="lead spacePar">Nós acreditamos que todas as pessoas tem direito a moradias seguras, dignas e em bom estado, e pensando nisso queremos te
+            ajudar a transformar o seu lar.
+            Morada te ajuda a terminar aquela obra parada em casa, fazer pequenas reformas e realizar manutenções de forma rápida,
+                        a preços populares e até mesmo <em>gratuitamente</em> através do aluguel e doação de ferramentas e serviços.
+                    Faça parte da iniciativa Morada você também e leve felicidade a sua região. </p>
+
+            {/* sessão faça parte */}
+            <div>
+                <h2 className="display-2">Faça parte da Morada</h2>
+                <p className="lead spacePar">Tá com aquela caixa de ferramenta parada em casa, ou algum resto de obra? É um prestador de serviços com um grande coração
+                e muita vontade de ajudar o mundo a ser um lugar melhor? Sabia que alguém na sua rua pode estar só esperando por você pra tornar a casa em um verdadeiro lar?
+                        Ofereça aqui na Morada! </p>
+            </div>
+            {/* sessão serviços */}
+            <div>
+                <a name="servicos" id="servicos" href="#"></a>
+                <h2 className="display-2">Serviços que oferecemos:</h2>
+                <p className="lead spacePar">Você poderá encontrar empréstimo de todo tipo de ferramentas, serviços gratuitos
+                        e a preços populares.<br></br>
+                        Comece escolhendo uma categoria:
+                    </p>
+            </div>
+
+
+            <div className="row spacePar">
+                <div className="col-sm">
+                    <a href="servicos.php">
+                        <Image src={construction} style={{ width: "100px" }} /></a>
+                    <h3 className="display-5">CONSTRUÇÃO</h3>
+                    <p>alvenaria, concretagem, revestimentos, carpintaria, etc.</p>
+                </div>
+
+                <div className="col-sm">
+                    <a href="servicos.php">
+                        <Image src={conserto} style={{ width: "100px" }} /></a>
+                    <h3 display-5>MANUTENÇÃO</h3>
+                    <p>instalação elétrica, reparos hidráulicos, pinturas, etc</p>
+
+                </div>
+            </div>
+
+
+
+            {/* sessão empresa amiga */}
+            <div className="container-fluid">
+                <h3 className="display-4">PROJETOS</h3>
+                <div className="row spacePar">
+                    <div className="col-sm">
+                        <Image src={projeto1} className="imgEmpAmiga"/>
+                        <p> Acrescentar evento</p>
+                    </div>
+
+
+                    <div className="col-sm">
+                        <Image src={projeto2} className="imgEmpAmiga"/>
+                        <p> Acrescentar evento</p>
+                    </div>
+
+
+                    <div className="col-sm">
+                        <Image src={projeto3} className="imgEmpAmiga"/>
+                        <p> Acrescentar evento</p>
+                    </div>
+
+                </div>
+                <Button variant="secondary"> <a href="projetos.php">Conheça nossos projetos</a></Button>
+            </div>
+
+
+
+            <div className="container " style={{ marginTop: "70px" }}>
+                <h3 className="display-4" style={{ marginBottom: "70px", marginTop: "70px" }} >EMPRESAS PARCEIRAS</h3>
+                <div className="row">
+                    <div className="col-sm">
+                        <Image src={CeC} style={{width: "150px"}}/>
+                    </div>
+
+
+                    <div className="col-sm">
+                        <Image src={CeC} style={{width: "150px"}}/>
+                    </div>
+
+
+                    <div className="col-sm">
+                        <Image src={CeC} style={{width: "150px"}}/>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </Container>
+    );
+}
