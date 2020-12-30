@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button, Image } from 'react-bootstrap'
+import { Container, Row, Col, Button, Image, } from 'react-bootstrap'
 import CeC from '../assets/CeC.JPG'
 import construction from '../assets/servicos/construction.png'
 import conserto from '../assets/servicos/conserto.png'
@@ -28,7 +28,7 @@ export default function Home() {
             </div>
             {/* sessão serviços */}
             <div>
-                <a name="servicos" id="servicos" href="#"></a>
+                <a name="servicos" id="servicos"></a>
                 <h2 className="display-2">Serviços que oferecemos:</h2>
                 <p className="lead spacePar">Você poderá encontrar empréstimo de todo tipo de ferramentas, serviços gratuitos
                         e a preços populares.<br></br>
@@ -37,71 +37,70 @@ export default function Home() {
             </div>
 
 
-            <div className="row spacePar">
-                <div className="col-sm">
+            <Row className="row spacePar">
+                <Col>
                     <a href="servicos.php">
                         <Image src={construction} style={{ width: "100px" }} /></a>
                     <h3 className="display-5">CONSTRUÇÃO</h3>
                     <p>alvenaria, concretagem, revestimentos, carpintaria, etc.</p>
-                </div>
+                </Col>
 
-                <div className="col-sm">
+                <Col>
                     <a href="servicos.php">
                         <Image src={conserto} style={{ width: "100px" }} /></a>
                     <h3 display-5>MANUTENÇÃO</h3>
                     <p>instalação elétrica, reparos hidráulicos, pinturas, etc</p>
 
-                </div>
-            </div>
-
+                </Col>
+            </Row>
 
 
             {/* sessão empresa amiga */}
-            <div className="container-fluid">
+            <Container fluid>
                 <h3 className="display-4">PROJETOS</h3>
-                <div className="row spacePar">
-                    <div className="col-sm">
+                <Row className="spacePar">
+                    <Col>
                         <Image src={projeto1} className="imgEmpAmiga"/>
                         <p> Acrescentar evento</p>
-                    </div>
+                    </Col>
 
 
-                    <div className="col-sm">
+                    <Col>
                         <Image src={projeto2} className="imgEmpAmiga"/>
                         <p> Acrescentar evento</p>
-                    </div>
+                    </Col>
 
 
-                    <div className="col-sm">
+                    <Col>
                         <Image src={projeto3} className="imgEmpAmiga"/>
                         <p> Acrescentar evento</p>
-                    </div>
+                    </Col>
 
-                </div>
+                </Row>
                 <Button variant="secondary"> <a href="projetos.php">Conheça nossos projetos</a></Button>
-            </div>
+            </Container>
 
 
 
-            <div className="container " style={{ marginTop: "70px" }}>
+            <Container style={{ marginTop: "70px" }}>
                 <h3 className="display-4" style={{ marginBottom: "70px", marginTop: "70px" }} >EMPRESAS PARCEIRAS</h3>
-                <div className="row">
-                    <div className="col-sm">
+                <Row>
+                    <Col>
                         <Image src={CeC} style={{width: "150px"}}/>
-                    </div>
+                    </Col>
 
 
-                    <div className="col-sm">
+                    <Col>
                         <Image src={CeC} style={{width: "150px"}}/>
-                    </div>
+                    </Col>
 
 
-                    <div className="col-sm">
+                    <Col>
                         <Image src={CeC} style={{width: "150px"}}/>
-                    </div>
+                    </Col>
 
-                </div>
-            </div>
+                </Row>
+            </Container>
 
 
         </Container>

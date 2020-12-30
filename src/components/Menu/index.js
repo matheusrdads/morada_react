@@ -1,11 +1,19 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Image } from "react-bootstrap";
+import { Facebook, Twitter, Instagram } from 'react-bootstrap-icons';
+import logo from '../.././views/assets/logo.png'
 
 export default function Menu() {
   return (
     <div>
+      <Navbar bg="dark" className="justify-content-end" style={{height: "40px"}}>
+      <Nav.Link href="#home"><Facebook color="light"/></Nav.Link>
+      <Nav.Link href="#home"><Twitter color="light"/></Nav.Link>
+      <Nav.Link href="#home"><Instagram color="light"/></Nav.Link>
+      </Navbar>
+
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home"><Image height="45" src={logo}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
