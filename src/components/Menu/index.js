@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Image } from "react-bootstrap";
 import { Facebook, Twitter, Instagram } from 'react-bootstrap-icons';
 import logo from '../.././views/assets/logo.png'
-
+import {Link} from 'react-router-dom'
 export default function Menu() {
   return (
     <div>
@@ -18,7 +18,7 @@ export default function Menu() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Link className="nav-link" to="/sobre">Sobre</Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
