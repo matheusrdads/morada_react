@@ -6,18 +6,14 @@ import conserto from '../assets/servicos/conserto.png'
 import projeto1 from '../assets/projetos/projeto1.jpg'
 import projeto2 from '../assets/projetos/projeto2.jpg'
 import projeto3 from '../assets/projetos/projeto3.jpg'
+import Sobre from '../Sobre/'
 
 
 export default function Home() {
     return (
         <Container fluid>
             {/* sessão sobre */}
-            <h2 className="display-2">Sobre</h2>
-            <p className="lead spacePar">Nós acreditamos que todas as pessoas tem direito a moradias seguras, dignas e em bom estado, e pensando nisso queremos te
-            ajudar a transformar o seu lar.
-            Morada te ajuda a terminar aquela obra parada em casa, fazer pequenas reformas e realizar manutenções de forma rápida,
-                        a preços populares e até mesmo <em>gratuitamente</em> através do aluguel e doação de ferramentas e serviços.
-                    Faça parte da iniciativa Morada você também e leve felicidade a sua região. </p>
+            <Sobre/>            
 
             {/* sessão faça parte */}
             <div>
