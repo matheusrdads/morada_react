@@ -7,8 +7,5 @@ export default function Sobre (){
     
     return ( 
             <Card1/>
-            
-            
-
     )
 }

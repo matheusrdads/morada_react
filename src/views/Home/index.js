@@ -6,7 +6,6 @@ import projeto2 from '../assets/projetos/projeto2.jpg'
 import projeto3 from '../assets/projetos/projeto3.jpg'
 import Servicos from '../Servicos/'
 
-
 export default function Home() {
     return (
         <Container fluid>

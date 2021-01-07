@@ -18,22 +18,26 @@ export default function Menu() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Link className="nav-link" to="/Sobre">Sobre</Link>
-            <Link className="nav-link" to="/Contato">Contato</Link>
-            <Link className="nav-link" to="/Servicos">Serviços</Link>
-            <Link className="nav-link" to="/Projeto">Projetos</Link>
+    
+            <Link className="nav-link" to="/sobre">Sobre</Link>
+            <Link className="nav-link" to="/contato">Contato</Link>
+            <Link className="nav-link" to="/servicos">Serviços</Link>
+            <Link className="nav-link" to="/projeto">Projetos</Link>
+
             
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
             <Button variant="outline-success">Search</Button>
           </Form>
-          <NavDropdown title={<Person/>} id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Meu Perfil</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Editar perfil</NavDropdown.Item>
+
+          <NavDropdown title={<Person/>} id="basic-nav-dropdown" className="dropleft">
+          <NavDropdown.Item><Link  to="/login">Login</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link to="/meu_Perfil">Meu Perfil</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link to="/editar_Perfil">Editar Perfil</Link></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Sair da conta</NavDropdown.Item>
+              <NavDropdown.Item><Link to="/sair">Sair da conta</Link></NavDropdown.Item>
+
             </NavDropdown>
         </Navbar.Collapse>
       </Navbar>
