@@ -8,7 +8,6 @@ import projeto2 from '../assets/projetos/projeto2.jpg'
 import projeto3 from '../assets/projetos/projeto3.jpg'
 import Sobre from '../Sobre/'
 
-
 export default function Home() {
     return (
         <Container fluid>
