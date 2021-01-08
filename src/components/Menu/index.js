@@ -33,7 +33,7 @@ export default function Menu() {
 
           <NavDropdown title={<Person/>} id="basic-nav-dropdown" className="dropleft">
           <NavDropdown.Item><Link  to="/login">Login</Link></NavDropdown.Item>
-          <NavDropdown.Item><Link to="/meu_Perfil">Meu Perfil</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link to="/perfil">Meu Perfil</Link></NavDropdown.Item>
           <NavDropdown.Item><Link to="/editar_Perfil">Editar Perfil</Link></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item><Link to="/sair">Sair da conta</Link></NavDropdown.Item>

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button, Image, } from 'react-bootstrap'
+import { Container, Col, Form, Button } from 'react-bootstrap'
 
 export default function Contato() {
     return (
-        <Container fluid="md">
+        <Container fluid="md mb-3 mt-3" >
             <h1>FALE CONOSCO</h1>
             
             <Form>
@@ -29,7 +29,6 @@ export default function Contato() {
                     </Form.Group>
                 </Form.Row>
 
-
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Digite sua Mensagem</Form.Label>
                     <Form.Control as="textarea" rows={3} />
@@ -37,12 +36,6 @@ export default function Contato() {
                 
                 <Button type="submit">Enviar</Button>
             </Form>
-
-            
-
-
-
-
         </Container>
     );
 }

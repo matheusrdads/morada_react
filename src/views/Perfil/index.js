@@ -1,11 +1,11 @@
 import React from 'react';
-import profile from './profile.png'
+import profile from '../assets/profile.png'
 
 import { Card, Container, CardGroup } from "react-bootstrap";
 
 export default function Perfil() {
     return (
-        <Container fluid="md">
+        <Container fluid="md mb-3 mt-3">
         <CardGroup>
         <Card>
             <Card.Body>
@@ -28,7 +28,7 @@ export default function Perfil() {
 
         <Card>
             <Card.Body>
-            <Card.Title>Fodase?</Card.Title>           
+            <Card.Title>Example</Card.Title>           
                 <Card.Text>
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.Some quick example text to build on the card title and make up the bulk of

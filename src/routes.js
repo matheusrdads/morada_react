@@ -11,6 +11,8 @@ import Componente_manutencao from './components/Componente_manutencao';
 
 import Login from './views/Login'
 import criarConta from './views/Criar_conta'
+import Contato from './views/Contato'
+import Perfil from './views/Perfil'
 
 
 export default function Routes(){
@@ -27,6 +29,8 @@ export default function Routes(){
 
             <Route exact path="/login" component={Login}/>
             <Route exact path="/criar_conta" component={criarConta}/>
+            <Route exact path="/contato" component={Contato}/>
+            <Route exact path="/perfil" component={Perfil}/>
 
 
         </Switch>
